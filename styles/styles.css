@@ -31,7 +31,7 @@ body{
     padding: 1rem;
     border-radius: 20px;
     height: 100%;
-    width: 70%;
+    width: 80%;
 }
 
 .login_img{
@@ -64,10 +64,11 @@ body{
 
 .login_form{
     width: 50%;
-    padding: 2.9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 3rem;
 }
 
 .datosLogin {
@@ -96,7 +97,7 @@ body{
   border-radius: 10px;
   border: none;
   background-color: #f1f1f1;
-  font-size: 14px;
+  font-size: 12px;
   outline: none;
   color: #333;
 }
@@ -124,7 +125,6 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.3rem;
 }
 
 .forgot {
@@ -145,9 +145,17 @@ body{
     color: #ffffff;
     font-weight: 700;
     background-color: #F2B286;
+    border: solid 2px #F2B286;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: .7rem 0;
     border-radius: 10px;
+    margin-top: 8px;
+    transition: all .3s ease;
+}
+
+.ingreso:hover{
+    background-color: white;
+    color: #F2B286;
 }
