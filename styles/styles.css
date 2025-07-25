@@ -6,6 +6,148 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     list-style: none;
+    font-size: 20px;
     text-decoration: none;
     scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F0F0F0;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+}
+
+.login{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 100%;
+    width: 70%;
+}
+
+.login_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-image: url("/assets/image_login.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.bienvenidoLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bienvenidoLogin .titulo1{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.bienvenidoLogin .titulo2{
+    font-size: 13px;
+    font-weight: 450;
+}
+
+.login_form{
+    width: 50%;
+    padding: 2.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.datosLogin {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  max-width: 400px;
+}
+
+.datosLogin label {
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 0.2rem;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 16px 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  outline: none;
+  color: #333;
+}
+
+.input-container .icon-left {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  font-size: .8rem;
+}
+
+.input-container .icon-right {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.forgot {
+  font-size: 12px;
+  font-weight: 600;
+  color: #F2B286;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.ingreso{
+    width: 100%;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #F2B286;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .7rem 0;
+    border-radius: 10px;
 }

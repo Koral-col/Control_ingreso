@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <title>Inicio</title>
-</head>
-<body>
-    <!--cuadrado grande blanco-->
-    <div class="login">
-        <div class="login_img">
-            <img src="/assets/image_login.png" alt="">
-        </div>
-        <div class="login_form">
-            <div class="bienvenidoLogin">
-                <h1>Bienvenido de vuelta!</h1>
-                <h3>Ingresa con tus credenciales (correo y contraseña)</h3>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/styles.css">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <script src="https://kit.fontawesome.com/460146b1b8.js"
+            crossorigin="anonymous"></script>
+        <title>Inicio</title>
+    </head>
+    <body>
+
+        <div class="main">
+            <div class="login">
+                <div class="login_img">
+                </div>
+                <div class="login_form">
+
+                    <div class="bienvenidoLogin">
+                        <h1 class="titulo1">Bienvenido de vuelta!</h1>
+                        <p class="titulo2">Ingresa con tus credenciales (correo
+                            y contraseña)</p>
+                    </div><br>
+
+                    <div class="datosLogin">
+                        <label for="email">Correo electrónico</label>
+                        <div class="input-container">
+                            <i class="ph ph-user icon-left"></i>
+                            <input placeholder="Correo Electrónico" type="email"
+                                id="email">
+                        </div><br>
+
+                        <div class="label-row">
+                            <label for="password">Contraseña</label>
+                            <a href="#" class="forgot">La olvidé</a>
+                        </div>
+                        <div class="input-container">
+                            <i class="ph ph-lock icon-left"></i>
+                            <input placeholder="Contraseña" type="password"
+                                id="password">
+                            <i class="ph ph-eye icon-right toggle-password"
+                                id="togglePassword"></i>
+                        </div>
+                    </div><br>
+                    <a href class="ingreso">Iniciar Sesión</a>
+                </div>
             </div>
-            <div class="datosLogin">
-                
-            </div>
         </div>
-    </div>
-</body>
+
+        <script src="/controller/index.js"></script>
+    </body>
 </html>
